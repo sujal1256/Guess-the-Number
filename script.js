@@ -10,7 +10,7 @@ let score = n;
 const number = document.querySelector('.number');
 // number.textContent = random;
 const guess = document.querySelector(".guess");
-document.querySelector('.highscore').textContent = localStorage.getItem('high');
+// document.querySelector('.highscore').textContent = localStorage.getItem('high');
 checkBtn.addEventListener('click',function(){
     const guessNumber = document.querySelector(".guess").value;
     if(guessNumber === ''){
