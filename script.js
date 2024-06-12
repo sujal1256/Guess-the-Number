@@ -2,15 +2,14 @@
 const checkBtn = document.querySelector(".check");
 const againBtn = document.querySelector(".again");
 const message = document.querySelector('.message');
-// console.log(checkBtn);
-// console.log(againBtn);
+
 let n = 20;
 let random = Math.floor(Math.random()*n)+1;
 let score = n;
 const number = document.querySelector('.number');
-// number.textContent = random;
+
 const guess = document.querySelector(".guess");
-// document.querySelector('.highscore').textContent = localStorage.getItem('high');
+
 checkBtn.addEventListener('click',function(){
     const guessNumber = document.querySelector(".guess").value;
     if(guessNumber === ''){
@@ -57,7 +56,7 @@ checkBtn.addEventListener('click',function(){
 })
 againBtn.addEventListener('click',()=>{
     random = Math.floor(Math.random()*n)+1;
-    // number.textContent = random;
+
     guess.disabled = false;
     n=20;
     score = n;
