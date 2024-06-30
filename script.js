@@ -9,6 +9,8 @@ let score = n;
 const number = document.querySelector('.number');
 
 const guess = document.querySelector(".guess");
+document.querySelector('.highscore').textContent = localStorage.getItem('high') ?? 0;
+
 
 checkBtn.addEventListener('click',function(){
     const guessNumber = document.querySelector(".guess").value;
